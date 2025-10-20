@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Efeito Visual Studios</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #faf8f5;
+      color: #111;
+      line-height: 1.6;
+      padding-bottom: 100px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0D47A1, #B71C1C, #6A1B9A);
+      padding: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    header img {
+      max-height: 60px;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+
+    header h1 {
+      font-weight: 900;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.07);
+      border-left: 8px solid;
+    }
+
+    section.qs {
+      border-color: #0D47A1; /* azul */
+    }
+    section.qf {
+      border-color: #B71C1C; /* vermelho */
+    }
+    section.pak {
+      border-color: #6A1B9A; /* roxo */
+    }
+    section.serv {
+      border-color: #FFC107;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 span.emoji {
+      font-size: 1.5rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    li::before {
+      content: "•";
+      color: #6A1B9A;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    /* Botão WhatsApp fixo lateral */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 15px 25px;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 8px 12px rgba(0,217,150,0.3);
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 9999;
+    }
+
+    .whatsapp-float:hover {
+      background: #128C7E;
+      box-shadow: 0 10px 20px rgba(18,140,126,0.5);
+    }
+
+    .whatsapp-float svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    /* Responsividade */
+    @media(max-width: 600px){
+      header {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.imgur.com/mQmw1wS.png" alt="Logomarca Efeito Visual Studios" />
+    <h1>Efeito Visual Studios</h1>
+  </header>
+
+  <main>
+    <section class="qs">
+      <h2><span class="emoji">💼</span> Quem Somos</h2>
+      <p>A <strong>Efeito Visual Studios</strong> é um estúdio de marketing e comunicação visual especializado em contribuir para a visibilidade de marcas no ambiente digital e físico. Combinamos estratégias de marketing, design criativo e impressão profissional para entregar resultados reais e duradouros.</p>
+      <p>Nosso objetivo é ajudar empresas, empreendedores e marcas locais a atrair mais atenção, clientes e alternativas, tanto nas redes sociais quanto nas ruas. Cuidamos de toda a jornada visual do seu negócio — desde a criação da arte, até a impressão e instalação de lonas, adesivos e fachadas personalizadas.</p>
+    </section>
+
+    <section class="qf">
+      <h2><span class="emoji">🎯</span> O que fazemos</h2>
+      <ul>
+        <li><strong>Marketing Digital:</strong> criação de conteúdo estratégico, gestão de Instagram, design de posts e campanhas pagas.</li>
+        <li><strong>Design Gráfico:</strong> desenvolvimento de logotipos, identidade visual, banners e materiais promocionais.</li>
+        <li><strong>Impressão e Instalação:</strong> produção e aplicação de lonas, adesivos e painéis personalizados com acabamento profissional.</li>
+      </ul>
+      <p>Cada projeto é feito de forma planejada e personalizada, garantindo que sua marca se destaque, conquiste visibilidade e cause uma excelente primeira impressão.</p>
+    </section>
+
+    <section class="pak">
+      <h2><span class="emoji">🚀</span> Transforme sua marca em destaque</h2>
+      <p>Seja nas redes sociais ou na fachada do seu negócio, nós ajudamos sua empresa a ser vista, lembrada e escolhida. Entre em contato conosco e descubra como podemos contribuir com sua presença e valorizar sua marca.</p>
+      <p><strong>📞 Fale conosco e peça seu orçamento!</strong></p>
+      
+      <h3 style="color:#0D47A1;">🟢 Pacote Digital — Presença Online (R$600/mês)</h3>
+      <ul>
+        <li>12 postagens no feed/mês (3 por semana)</li>
+        <li>8 histórias/mês</li>
+        <li>Criação da identidade visual</li>
+        <li>Relatório mensal</li>
+      </ul>
+
+      <h3 style="color:#1A237E;">🔵 Pacote Completo — Visibilidade Total (R$1.200–R$1.800/mês)</h3>
+      <ul>
+        <li>16 postagens + 4 Reels + 12 histórias</li>
+        <li>1 arte para banner/lona por mês</li>
+        <li>Estratégia de crescimento + hashtags</li>
+        <li>1 campanha de anúncio (cliente paga orçamento)</li>
+        <li>Relatório e consultoria quinzenal</li>
+      </ul>
+
+      <h3 style="color:#6A1B9A;">🔴 Pacote Premium — Digital + Impressão (R$2.500+)</h3>
+      <ul>
+        <li>Gestão completa do Instagram</li>
+        <li>Criação de conteúdo + anúncios + artes impressas</li>
+        <li>Impressão e instalação de 1 material físico por mês (banner/adesivo)</li>
+        <li>Atendimento direto + relatórios semanais</li>
+      </ul>
+    </section>
+
+    <section class="serv">
+      <h2><span class="emoji">🟡</span> Serviços avulsos</h2>
+      <ul>
+        <li>Impressão de lona: R$45/m²</li>
+        <li>Adesivo impresso: R$55/m²</li>
+        <li>Instalação: sob orçamento</li>
+        <li>Criação de arte: R$60 a R$200 por peça</li>
+        <li>Bobinas profissionais: R$150–R$300</li>
+        <li>Logo: a partir de R$300</li>
+      </ul>
+    </section>
+  </main>
+
+  <a 
+    href="https://wa.me/message/HPVYNZT5UKQ5L1" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="Entre em contato conosco no WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path d="M16 3a13 13 0 0 0-4.1 25.3L7 29l1.7-4.9A13 13 0 1 0 16 3zm6.5 18a4.5 4.5 0 0 1-6.1-1.4l-.3-.5-2.9-1.1 2.1 3.2-.7 1.6a9.1 9.1 0 0 0 6.8-2.8 9.5 9.5 0 0 0 2-3.1 5.1 5.1 0 0 1-2 .1z"/>
+    </svg>
+    Entre em contato conosco
+  </a>
+
+</body>
+</html>
